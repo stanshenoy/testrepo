@@ -1,5 +1,5 @@
 public void runCustomTrigger(String script) {
-    ScriptEngineManager factory = new ScriptEngineManager();
-    ScriptEngine engine = factory.getEngineByName("JavaScript");
-    engine.eval(script);
+    ScriptEngineManager factory = new ScriptEngineManager(); // insure
+    ScriptEngine engine = factory.getEngineByName("JavaScript"); //insecure
+    engine.eval(script); //insecure
 }
